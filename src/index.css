@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-serif-subtle {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-victorian {
+    font-family: 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-victorian-sc {
+    font-family: 'IM Fell English SC', 'Cinzel', Georgia, serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+
+  .vintage-double-border {
+    border: 3px double #b8863b;
+  }
+
+  .parchment-texture {
+    background-color: #faf4eb;
+    background-image: radial-gradient(#eadbc8 0.75px, transparent 0.75px);
+    background-size: 16px 16px;
+  }
+}
+
+@keyframes slowFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-slow-fade {
+  animation: slowFadeIn var(--fade-duration, 1000ms) cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* View-Only Mode: Completely hide all edit options, pencils, admin bars, and modal triggers */
+body.view-only-mode [data-editor-control="true"],
+body.view-only-mode .editor-control,
+body.view-only-mode .editor-only {
+  display: none !important;
+}
+
+body.view-only-mode .editable-text-hover:hover {
+  cursor: default !important;
+  background-color: transparent !important;
+  outline: none !important;
+}
+

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.aistudio/
+.aws/
+.codex/
+.agents/
+data/recovery-backups/
+data/shared-app-state.backup.json
+*.pem
+*.key

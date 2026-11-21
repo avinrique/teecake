@@ -1,0 +1,6 @@
+{
+  "name": "TeeCake Creations",
+  "description": "Victorian old-fashioned artisanal home bakehouse and hearth confections portfolio inspired by Oliver Twist, featuring wallpaper manager, full typography controls, signature hearth pastries, and photo gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
